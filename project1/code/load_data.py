@@ -16,7 +16,6 @@ def load_data(path):
 
     for figure_path in empty_list:
         img = cv2.imread(path+'empty\\'+figure_path)
-        # img = cv2.resize(img, (30, 15))
         img = np.resize(img, (3, 60, 30))
         image[i] = img/255.
 
@@ -25,7 +24,6 @@ def load_data(path):
 
     for figure_path in occupied_list:
         img = cv2.imread(path+'occupied\\'+figure_path)
-        # img = cv2.resize(img, (30, 15))
         img = np.resize(img, (3, 60, 30))
         image[i] = img/255.
 
