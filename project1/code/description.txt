@@ -1,0 +1,17 @@
+First, our task in this project is to detect how many cars in a parking lot.Since the monitoring prespective is still, so we don't need to 
+do any more operation.
+
+data_preprocess.py: This file contains the tool which can help you to get the coordinate of a parking space, and we use this tool to get the
+whole parking space coordinate respectively. The coordinate in a frame of the monitoring video can be used to detect the car.
+
+load_data.py: This file provide the way to get the train data and test data.
+
+net.py: This file definite the CNN in this project, since the train data is small and skew, we can't use a large CNN to solve this project.
+
+parking_space_monitor.py: This file solve this project, it divides monitoring video into frames and send each frame into predict.py to get 
+the result and show it in the video.
+
+predict.py: The process send the image into data_process.crop to get all of the parking spaces, and then feed them into the net to get the
+result and return it.
+
+train_net.py: This file contains the steps to train the CNN we definited in the net.py.
