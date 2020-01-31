@@ -43,7 +43,7 @@ def crop(img):
     Return the num of parking space and the whole parking space coordinate
     in the img and the array's shape is (praking_sapce_num,30,60,3)
 
-    Paramaters
+    Parameters
     ----------
     img: 
         the input image waited to be cropped
